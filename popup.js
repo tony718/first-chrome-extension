@@ -1,7 +1,6 @@
 chrome.browserAction.onClicked.addListener(function(tab) {
   console.log('Turning ' + tab.url + ' red!');
   chrome.tabs.executeScript({
-    code: 'document.body.style.backgroundColor="red"'
-    code: 'document.body.style.fontFamily="Comic Sans"'
+    code: 'document.body.style.backgroundColor="red" ; document.body.style.fontFamily="Comic Sans"'
   });
 });
